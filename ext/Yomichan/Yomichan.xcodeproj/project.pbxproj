@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90E92A0B29DB303D00E69768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E92A0A29DB303D00E69768 /* AppDelegate.swift */; };
+		90E92A0D29DB303D00E69768 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E92A0C29DB303D00E69768 /* SceneDelegate.swift */; };
+		90E92A1029DB303D00E69768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A0E29DB303D00E69768 /* LaunchScreen.storyboard */; };
+		90E92A1329DB303D00E69768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A1129DB303D00E69768 /* Main.storyboard */; };
+		90E92A1C29DB303D00E69768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E92A1B29DB303D00E69768 /* AppDelegate.swift */; };
+		90E92A1F29DB303D00E69768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A1D29DB303D00E69768 /* Main.storyboard */; };
+		90E92A2729DB303D00E69768 /* Yomichan Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90E92A2629DB303D00E69768 /* Yomichan Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90E92A3129DB303D00E69768 /* Yomichan Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90E92A3029DB303D00E69768 /* Yomichan Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90E92A3729DB303D00E69768 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FA29DB303C00E69768 /* Main.html */; };
+		90E92A3829DB303D00E69768 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FA29DB303C00E69768 /* Main.html */; };
+		90E92A3929DB303D00E69768 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FC29DB303C00E69768 /* Icon.png */; };
+		90E92A3A29DB303D00E69768 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FC29DB303C00E69768 /* Icon.png */; };
+		90E92A3B29DB303D00E69768 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FD29DB303C00E69768 /* Style.css */; };
+		90E92A3C29DB303D00E69768 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FD29DB303C00E69768 /* Style.css */; };
+		90E92A3D29DB303D00E69768 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FE29DB303C00E69768 /* Script.js */; };
+		90E92A3E29DB303D00E69768 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E929FE29DB303C00E69768 /* Script.js */; };
+		90E92A3F29DB303D00E69768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E929FF29DB303C00E69768 /* ViewController.swift */; };
+		90E92A4029DB303D00E69768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E929FF29DB303C00E69768 /* ViewController.swift */; };
+		90E92A4129DB303D00E69768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A0029DB303D00E69768 /* Assets.xcassets */; };
+		90E92A4229DB303D00E69768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A0029DB303D00E69768 /* Assets.xcassets */; };
+		90E92A4329DB303D00E69768 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E92A0229DB303D00E69768 /* SafariWebExtensionHandler.swift */; };
+		90E92A4429DB303D00E69768 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E92A0229DB303D00E69768 /* SafariWebExtensionHandler.swift */; };
+		90E92A6B29DB303D00E69768 /* display-templates.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5629DB303D00E69768 /* display-templates.html */; };
+		90E92A6C29DB303D00E69768 /* popup-preview.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5729DB303D00E69768 /* popup-preview.html */; };
+		90E92A6E29DB303D00E69768 /* legal.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5929DB303D00E69768 /* legal.html */; };
+		90E92A6F29DB303D00E69768 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5A29DB303D00E69768 /* css */; };
+		90E92A7029DB303D00E69768 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5B29DB303D00E69768 /* images */; };
+		90E92A7129DB303D00E69768 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5C29DB303D00E69768 /* info.html */; };
+		90E92A7229DB303D00E69768 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5D29DB303D00E69768 /* js */; };
+		90E92A7329DB303D00E69768 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5E29DB303D00E69768 /* popup.html */; };
+		90E92A7429DB303D00E69768 /* template-renderer.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5F29DB303D00E69768 /* template-renderer.html */; };
+		90E92A7529DB303D00E69768 /* issues.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6029DB303D00E69768 /* issues.html */; };
+		90E92A7629DB303D00E69768 /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6129DB303D00E69768 /* welcome.html */; };
+		90E92A7729DB303D00E69768 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6229DB303D00E69768 /* manifest.json */; };
+		90E92A7829DB303D00E69768 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6329DB303D00E69768 /* lib */; };
+		90E92A7929DB303D00E69768 /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6429DB303D00E69768 /* search.html */; };
+		90E92A7A29DB303D00E69768 /* action-popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6529DB303D00E69768 /* action-popup.html */; };
+		90E92A7B29DB303D00E69768 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6629DB303D00E69768 /* background.html */; };
+		90E92A7C29DB303D00E69768 /* settings.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6729DB303D00E69768 /* settings.html */; };
+		90E92A7D29DB303D00E69768 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6829DB303D00E69768 /* data */; };
+		90E92A7E29DB303D00E69768 /* permissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6929DB303D00E69768 /* permissions.html */; };
+		90E92A7F29DB303D00E69768 /* sw.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6A29DB303D00E69768 /* sw.js */; };
+		90E92A8029DB303D00E69768 /* display-templates.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5629DB303D00E69768 /* display-templates.html */; };
+		90E92A8129DB303D00E69768 /* popup-preview.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5729DB303D00E69768 /* popup-preview.html */; };
+		90E92A8329DB303D00E69768 /* legal.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5929DB303D00E69768 /* legal.html */; };
+		90E92A8429DB303D00E69768 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5A29DB303D00E69768 /* css */; };
+		90E92A8529DB303D00E69768 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5B29DB303D00E69768 /* images */; };
+		90E92A8629DB303D00E69768 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5C29DB303D00E69768 /* info.html */; };
+		90E92A8729DB303D00E69768 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5D29DB303D00E69768 /* js */; };
+		90E92A8829DB303D00E69768 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5E29DB303D00E69768 /* popup.html */; };
+		90E92A8929DB303D00E69768 /* template-renderer.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A5F29DB303D00E69768 /* template-renderer.html */; };
+		90E92A8A29DB303D00E69768 /* issues.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6029DB303D00E69768 /* issues.html */; };
+		90E92A8B29DB303D00E69768 /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6129DB303D00E69768 /* welcome.html */; };
+		90E92A8C29DB303D00E69768 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6229DB303D00E69768 /* manifest.json */; };
+		90E92A8D29DB303D00E69768 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6329DB303D00E69768 /* lib */; };
+		90E92A8E29DB303D00E69768 /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6429DB303D00E69768 /* search.html */; };
+		90E92A8F29DB303D00E69768 /* action-popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6529DB303D00E69768 /* action-popup.html */; };
+		90E92A9029DB303D00E69768 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6629DB303D00E69768 /* background.html */; };
+		90E92A9129DB303D00E69768 /* settings.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6729DB303D00E69768 /* settings.html */; };
+		90E92A9229DB303D00E69768 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6829DB303D00E69768 /* data */; };
+		90E92A9329DB303D00E69768 /* permissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6929DB303D00E69768 /* permissions.html */; };
+		90E92A9429DB303D00E69768 /* sw.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E92A6A29DB303D00E69768 /* sw.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90E92A2829DB303D00E69768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E929F429DB303C00E69768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E92A2529DB303D00E69768;
+			remoteInfo = "Yomichan Extension (iOS)";
+		};
+		90E92A3229DB303D00E69768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E929F429DB303C00E69768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E92A2F29DB303D00E69768;
+			remoteInfo = "Yomichan Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90E92A4A29DB303D00E69768 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90E92A2729DB303D00E69768 /* Yomichan Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A5129DB303D00E69768 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90E92A3129DB303D00E69768 /* Yomichan Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		90E929FB29DB303C00E69768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		90E929FC29DB303C00E69768 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		90E929FD29DB303C00E69768 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		90E929FE29DB303C00E69768 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		90E929FF29DB303C00E69768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90E92A0029DB303D00E69768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90E92A0229DB303D00E69768 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		90E92A0729DB303D00E69768 /* Yomichan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yomichan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E92A0A29DB303D00E69768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90E92A0C29DB303D00E69768 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		90E92A0F29DB303D00E69768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90E92A1229DB303D00E69768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90E92A1429DB303D00E69768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E92A1929DB303D00E69768 /* Yomichan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yomichan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E92A1B29DB303D00E69768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90E92A1E29DB303D00E69768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90E92A2029DB303D00E69768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E92A2129DB303D00E69768 /* Yomichan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yomichan.entitlements; sourceTree = "<group>"; };
+		90E92A2629DB303D00E69768 /* Yomichan Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yomichan Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E92A2B29DB303D00E69768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E92A3029DB303D00E69768 /* Yomichan Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yomichan Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E92A3529DB303D00E69768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E92A3629DB303D00E69768 /* Yomichan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yomichan.entitlements; sourceTree = "<group>"; };
+		90E92A5629DB303D00E69768 /* display-templates.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "display-templates.html"; path = "../../display-templates.html"; sourceTree = "<group>"; };
+		90E92A5729DB303D00E69768 /* popup-preview.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "popup-preview.html"; path = "../../popup-preview.html"; sourceTree = "<group>"; };
+		90E92A5929DB303D00E69768 /* legal.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = legal.html; path = ../../legal.html; sourceTree = "<group>"; };
+		90E92A5A29DB303D00E69768 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../css; sourceTree = "<group>"; };
+		90E92A5B29DB303D00E69768 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
+		90E92A5C29DB303D00E69768 /* info.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = info.html; path = ../../info.html; sourceTree = "<group>"; };
+		90E92A5D29DB303D00E69768 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../js; sourceTree = "<group>"; };
+		90E92A5E29DB303D00E69768 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../popup.html; sourceTree = "<group>"; };
+		90E92A5F29DB303D00E69768 /* template-renderer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "template-renderer.html"; path = "../../template-renderer.html"; sourceTree = "<group>"; };
+		90E92A6029DB303D00E69768 /* issues.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = issues.html; path = ../../issues.html; sourceTree = "<group>"; };
+		90E92A6129DB303D00E69768 /* welcome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = welcome.html; path = ../../welcome.html; sourceTree = "<group>"; };
+		90E92A6229DB303D00E69768 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		90E92A6329DB303D00E69768 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../lib; sourceTree = "<group>"; };
+		90E92A6429DB303D00E69768 /* search.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = search.html; path = ../../search.html; sourceTree = "<group>"; };
+		90E92A6529DB303D00E69768 /* action-popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "action-popup.html"; path = "../../action-popup.html"; sourceTree = "<group>"; };
+		90E92A6629DB303D00E69768 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../background.html; sourceTree = "<group>"; };
+		90E92A6729DB303D00E69768 /* settings.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = settings.html; path = ../../settings.html; sourceTree = "<group>"; };
+		90E92A6829DB303D00E69768 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../data; sourceTree = "<group>"; };
+		90E92A6929DB303D00E69768 /* permissions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = permissions.html; path = ../../permissions.html; sourceTree = "<group>"; };
+		90E92A6A29DB303D00E69768 /* sw.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = sw.js; path = ../../sw.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90E92A0429DB303D00E69768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A1629DB303D00E69768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2329DB303D00E69768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2D29DB303D00E69768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90E929F329DB303C00E69768 = {
+			isa = PBXGroup;
+			children = (
+				90E929F829DB303C00E69768 /* Shared (App) */,
+				90E92A0129DB303D00E69768 /* Shared (Extension) */,
+				90E92A0929DB303D00E69768 /* iOS (App) */,
+				90E92A1A29DB303D00E69768 /* macOS (App) */,
+				90E92A2A29DB303D00E69768 /* iOS (Extension) */,
+				90E92A3429DB303D00E69768 /* macOS (Extension) */,
+				90E92A0829DB303D00E69768 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90E929F829DB303C00E69768 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90E929FF29DB303C00E69768 /* ViewController.swift */,
+				90E92A0029DB303D00E69768 /* Assets.xcassets */,
+				90E929F929DB303C00E69768 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		90E929F929DB303C00E69768 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90E929FA29DB303C00E69768 /* Main.html */,
+				90E929FC29DB303C00E69768 /* Icon.png */,
+				90E929FD29DB303C00E69768 /* Style.css */,
+				90E929FE29DB303C00E69768 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90E92A0129DB303D00E69768 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A5529DB303D00E69768 /* Resources */,
+				90E92A0229DB303D00E69768 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		90E92A0829DB303D00E69768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A0729DB303D00E69768 /* Yomichan.app */,
+				90E92A1929DB303D00E69768 /* Yomichan.app */,
+				90E92A2629DB303D00E69768 /* Yomichan Extension.appex */,
+				90E92A3029DB303D00E69768 /* Yomichan Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90E92A0929DB303D00E69768 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A0A29DB303D00E69768 /* AppDelegate.swift */,
+				90E92A0C29DB303D00E69768 /* SceneDelegate.swift */,
+				90E92A0E29DB303D00E69768 /* LaunchScreen.storyboard */,
+				90E92A1129DB303D00E69768 /* Main.storyboard */,
+				90E92A1429DB303D00E69768 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		90E92A1A29DB303D00E69768 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A1B29DB303D00E69768 /* AppDelegate.swift */,
+				90E92A1D29DB303D00E69768 /* Main.storyboard */,
+				90E92A2029DB303D00E69768 /* Info.plist */,
+				90E92A2129DB303D00E69768 /* Yomichan.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		90E92A2A29DB303D00E69768 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A2B29DB303D00E69768 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		90E92A3429DB303D00E69768 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A3529DB303D00E69768 /* Info.plist */,
+				90E92A3629DB303D00E69768 /* Yomichan.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		90E92A5529DB303D00E69768 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90E92A5629DB303D00E69768 /* display-templates.html */,
+				90E92A5729DB303D00E69768 /* popup-preview.html */,
+				90E92A5929DB303D00E69768 /* legal.html */,
+				90E92A5A29DB303D00E69768 /* css */,
+				90E92A5B29DB303D00E69768 /* images */,
+				90E92A5C29DB303D00E69768 /* info.html */,
+				90E92A5D29DB303D00E69768 /* js */,
+				90E92A5E29DB303D00E69768 /* popup.html */,
+				90E92A5F29DB303D00E69768 /* template-renderer.html */,
+				90E92A6029DB303D00E69768 /* issues.html */,
+				90E92A6129DB303D00E69768 /* welcome.html */,
+				90E92A6229DB303D00E69768 /* manifest.json */,
+				90E92A6329DB303D00E69768 /* lib */,
+				90E92A6429DB303D00E69768 /* search.html */,
+				90E92A6529DB303D00E69768 /* action-popup.html */,
+				90E92A6629DB303D00E69768 /* background.html */,
+				90E92A6729DB303D00E69768 /* settings.html */,
+				90E92A6829DB303D00E69768 /* data */,
+				90E92A6929DB303D00E69768 /* permissions.html */,
+				90E92A6A29DB303D00E69768 /* sw.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90E92A0629DB303D00E69768 /* Yomichan (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E92A4B29DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan (iOS)" */;
+			buildPhases = (
+				90E92A0329DB303D00E69768 /* Sources */,
+				90E92A0429DB303D00E69768 /* Frameworks */,
+				90E92A0529DB303D00E69768 /* Resources */,
+				90E92A4A29DB303D00E69768 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90E92A2929DB303D00E69768 /* PBXTargetDependency */,
+			);
+			name = "Yomichan (iOS)";
+			productName = "Yomichan (iOS)";
+			productReference = 90E92A0729DB303D00E69768 /* Yomichan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90E92A1829DB303D00E69768 /* Yomichan (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E92A5229DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan (macOS)" */;
+			buildPhases = (
+				90E92A1529DB303D00E69768 /* Sources */,
+				90E92A1629DB303D00E69768 /* Frameworks */,
+				90E92A1729DB303D00E69768 /* Resources */,
+				90E92A5129DB303D00E69768 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90E92A3329DB303D00E69768 /* PBXTargetDependency */,
+			);
+			name = "Yomichan (macOS)";
+			productName = "Yomichan (macOS)";
+			productReference = 90E92A1929DB303D00E69768 /* Yomichan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90E92A2529DB303D00E69768 /* Yomichan Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E92A4729DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan Extension (iOS)" */;
+			buildPhases = (
+				90E92A2229DB303D00E69768 /* Sources */,
+				90E92A2329DB303D00E69768 /* Frameworks */,
+				90E92A2429DB303D00E69768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yomichan Extension (iOS)";
+			productName = "Yomichan Extension (iOS)";
+			productReference = 90E92A2629DB303D00E69768 /* Yomichan Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		90E92A2F29DB303D00E69768 /* Yomichan Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E92A4E29DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan Extension (macOS)" */;
+			buildPhases = (
+				90E92A2C29DB303D00E69768 /* Sources */,
+				90E92A2D29DB303D00E69768 /* Frameworks */,
+				90E92A2E29DB303D00E69768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yomichan Extension (macOS)";
+			productName = "Yomichan Extension (macOS)";
+			productReference = 90E92A3029DB303D00E69768 /* Yomichan Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90E929F429DB303C00E69768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					90E92A0629DB303D00E69768 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					90E92A1829DB303D00E69768 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					90E92A2529DB303D00E69768 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					90E92A2F29DB303D00E69768 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 90E929F729DB303C00E69768 /* Build configuration list for PBXProject "Yomichan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90E929F329DB303C00E69768;
+			productRefGroup = 90E92A0829DB303D00E69768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90E92A0629DB303D00E69768 /* Yomichan (iOS) */,
+				90E92A1829DB303D00E69768 /* Yomichan (macOS) */,
+				90E92A2529DB303D00E69768 /* Yomichan Extension (iOS) */,
+				90E92A2F29DB303D00E69768 /* Yomichan Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90E92A0529DB303D00E69768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A3929DB303D00E69768 /* Icon.png in Resources */,
+				90E92A1029DB303D00E69768 /* LaunchScreen.storyboard in Resources */,
+				90E92A3729DB303D00E69768 /* Main.html in Resources */,
+				90E92A3D29DB303D00E69768 /* Script.js in Resources */,
+				90E92A4129DB303D00E69768 /* Assets.xcassets in Resources */,
+				90E92A1329DB303D00E69768 /* Main.storyboard in Resources */,
+				90E92A3B29DB303D00E69768 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A1729DB303D00E69768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A3A29DB303D00E69768 /* Icon.png in Resources */,
+				90E92A3C29DB303D00E69768 /* Style.css in Resources */,
+				90E92A1F29DB303D00E69768 /* Main.storyboard in Resources */,
+				90E92A3E29DB303D00E69768 /* Script.js in Resources */,
+				90E92A4229DB303D00E69768 /* Assets.xcassets in Resources */,
+				90E92A3829DB303D00E69768 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2429DB303D00E69768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A8E29DB303D00E69768 /* search.html in Resources */,
+				90E92A8529DB303D00E69768 /* images in Resources */,
+				90E92A8429DB303D00E69768 /* css in Resources */,
+				90E92A8F29DB303D00E69768 /* action-popup.html in Resources */,
+				90E92A8129DB303D00E69768 /* popup-preview.html in Resources */,
+				90E92A8C29DB303D00E69768 /* manifest.json in Resources */,
+				90E92A9229DB303D00E69768 /* data in Resources */,
+				90E92A8D29DB303D00E69768 /* lib in Resources */,
+				90E92A8B29DB303D00E69768 /* welcome.html in Resources */,
+				90E92A8729DB303D00E69768 /* js in Resources */,
+				90E92A9129DB303D00E69768 /* settings.html in Resources */,
+				90E92A9029DB303D00E69768 /* background.html in Resources */,
+				90E92A9429DB303D00E69768 /* sw.js in Resources */,
+				90E92A8829DB303D00E69768 /* popup.html in Resources */,
+				90E92A8929DB303D00E69768 /* template-renderer.html in Resources */,
+				90E92A8A29DB303D00E69768 /* issues.html in Resources */,
+				90E92A8629DB303D00E69768 /* info.html in Resources */,
+				90E92A8029DB303D00E69768 /* display-templates.html in Resources */,
+				90E92A8329DB303D00E69768 /* legal.html in Resources */,
+				90E92A9329DB303D00E69768 /* permissions.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2E29DB303D00E69768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A7929DB303D00E69768 /* search.html in Resources */,
+				90E92A7029DB303D00E69768 /* images in Resources */,
+				90E92A6F29DB303D00E69768 /* css in Resources */,
+				90E92A7A29DB303D00E69768 /* action-popup.html in Resources */,
+				90E92A6C29DB303D00E69768 /* popup-preview.html in Resources */,
+				90E92A7729DB303D00E69768 /* manifest.json in Resources */,
+				90E92A7D29DB303D00E69768 /* data in Resources */,
+				90E92A7829DB303D00E69768 /* lib in Resources */,
+				90E92A7629DB303D00E69768 /* welcome.html in Resources */,
+				90E92A7229DB303D00E69768 /* js in Resources */,
+				90E92A7C29DB303D00E69768 /* settings.html in Resources */,
+				90E92A7B29DB303D00E69768 /* background.html in Resources */,
+				90E92A7F29DB303D00E69768 /* sw.js in Resources */,
+				90E92A7329DB303D00E69768 /* popup.html in Resources */,
+				90E92A7429DB303D00E69768 /* template-renderer.html in Resources */,
+				90E92A7529DB303D00E69768 /* issues.html in Resources */,
+				90E92A7129DB303D00E69768 /* info.html in Resources */,
+				90E92A6B29DB303D00E69768 /* display-templates.html in Resources */,
+				90E92A6E29DB303D00E69768 /* legal.html in Resources */,
+				90E92A7E29DB303D00E69768 /* permissions.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90E92A0329DB303D00E69768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A3F29DB303D00E69768 /* ViewController.swift in Sources */,
+				90E92A0B29DB303D00E69768 /* AppDelegate.swift in Sources */,
+				90E92A0D29DB303D00E69768 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A1529DB303D00E69768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A4029DB303D00E69768 /* ViewController.swift in Sources */,
+				90E92A1C29DB303D00E69768 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2229DB303D00E69768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A4329DB303D00E69768 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E92A2C29DB303D00E69768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E92A4429DB303D00E69768 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90E92A2929DB303D00E69768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E92A2529DB303D00E69768 /* Yomichan Extension (iOS) */;
+			targetProxy = 90E92A2829DB303D00E69768 /* PBXContainerItemProxy */;
+		};
+		90E92A3329DB303D00E69768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E92A2F29DB303D00E69768 /* Yomichan Extension (macOS) */;
+			targetProxy = 90E92A3229DB303D00E69768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90E929FA29DB303C00E69768 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E929FB29DB303C00E69768 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		90E92A0E29DB303D00E69768 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E92A0F29DB303D00E69768 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		90E92A1129DB303D00E69768 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E92A1229DB303D00E69768 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90E92A1D29DB303D00E69768 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E92A1E29DB303D00E69768 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90E92A4529DB303D00E69768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90E92A4629DB303D00E69768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		90E92A4829DB303D00E69768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yomichan Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan.Extension;
+				PRODUCT_NAME = "Yomichan Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90E92A4929DB303D00E69768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yomichan Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan.Extension;
+				PRODUCT_NAME = "Yomichan Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E92A4C29DB303D00E69768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Yomichan;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan;
+				PRODUCT_NAME = Yomichan;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90E92A4D29DB303D00E69768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Yomichan;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan;
+				PRODUCT_NAME = Yomichan;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E92A4F29DB303D00E69768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Yomichan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yomichan Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan.Extension;
+				PRODUCT_NAME = "Yomichan Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90E92A5029DB303D00E69768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Yomichan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yomichan Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan.Extension;
+				PRODUCT_NAME = "Yomichan Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		90E92A5329DB303D00E69768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Yomichan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Yomichan;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan;
+				PRODUCT_NAME = Yomichan;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90E92A5429DB303D00E69768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Yomichan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Yomichan;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Yomichan;
+				PRODUCT_NAME = Yomichan;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90E929F729DB303C00E69768 /* Build configuration list for PBXProject "Yomichan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E92A4529DB303D00E69768 /* Debug */,
+				90E92A4629DB303D00E69768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E92A4729DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E92A4829DB303D00E69768 /* Debug */,
+				90E92A4929DB303D00E69768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E92A4B29DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E92A4C29DB303D00E69768 /* Debug */,
+				90E92A4D29DB303D00E69768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E92A4E29DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E92A4F29DB303D00E69768 /* Debug */,
+				90E92A5029DB303D00E69768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E92A5229DB303D00E69768 /* Build configuration list for PBXNativeTarget "Yomichan (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E92A5329DB303D00E69768 /* Debug */,
+				90E92A5429DB303D00E69768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90E929F429DB303C00E69768 /* Project object */;
+}

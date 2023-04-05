@@ -911,36 +911,54 @@ class Backend {
             return {tab: existingTab, created: false};
         }
 
+        
+
+        // Create a new window/tab
+        
+        
         // chrome.windows not supported (e.g. on Firefox mobile)
-        if (!isObject(chrome.windows)) {
-            throw new Error('Window creation not supported');
+        if (!isObject(chrome.windows) || !chrome.windows.hasOwnProperty('create')) {
+            const popupTab = await this._createTab(baseUrl);
+            
+            await this._waitUntilTabFrameIsReady(popupTab.id, 0, 2000);
+            
+            await this._sendMessageTabPromise(
+                popupTab.id,
+                {action: 'SearchDisplayController.setMode', params: {mode: 'popup'}},
+                {frameId: 0}
+            );
+
+            this._searchPopupTabId = popupTab.id;
+            
+            return {tab: popupTab, created: true};
+        } else {
+            const options = this._getProfileOptions({current: true});
+            const createData = this._getSearchPopupWindowCreateData(baseUrl, options);
+            const {popupWindow: {windowState}} = options;
+            const popupWindow = await this._createWindow(createData);
+            
+            if (windowState !== 'normal') {
+                await this._updateWindow(popupWindow.id, {state: windowState});
+            }
+            
+            const {tabs} = popupWindow;
+            
+            if (tabs.length === 0) {
+                throw new Error('Created window did not contain a tab');
+            }
+
+            const tab = tabs[0];
+            await this._waitUntilTabFrameIsReady(tab.id, 0, 2000);
+
+            await this._sendMessageTabPromise(
+                tab.id,
+                {action: 'SearchDisplayController.setMode', params: {mode: 'popup'}},
+                {frameId: 0}
+            );
+
+            this._searchPopupTabId = tab.id;
+            return {tab, created: true};
         }
-
-        // Create a new window
-        const options = this._getProfileOptions({current: true});
-        const createData = this._getSearchPopupWindowCreateData(baseUrl, options);
-        const {popupWindow: {windowState}} = options;
-        const popupWindow = await this._createWindow(createData);
-        if (windowState !== 'normal') {
-            await this._updateWindow(popupWindow.id, {state: windowState});
-        }
-
-        const {tabs} = popupWindow;
-        if (tabs.length === 0) {
-            throw new Error('Created window did not contain a tab');
-        }
-
-        const tab = tabs[0];
-        await this._waitUntilTabFrameIsReady(tab.id, 0, 2000);
-
-        await this._sendMessageTabPromise(
-            tab.id,
-            {action: 'SearchDisplayController.setMode', params: {mode: 'popup'}},
-            {frameId: 0}
-        );
-
-        this._searchPopupTabId = tab.id;
-        return {tab, created: true};
     }
 
     async _findSearchPopupTab(urlPredicate) {
@@ -973,6 +991,22 @@ class Backend {
         };
     }
 
+    _createTab(url) {
+        return new Promise((resolve, reject) => {
+            return chrome.tabs.create(
+                url,
+                (result) => {
+                    const error = chrome.runtime.lastError;
+                    if (error) {
+                        reject(new Error(error.message));
+                    } else {
+                        resolve(result);
+                    }
+                }
+            );
+        });
+    }
+    
     _createWindow(createData) {
         return new Promise((resolve, reject) => {
             chrome.windows.create(
@@ -1366,7 +1400,23 @@ class Backend {
     }
 
     _validatePrivilegedMessageSender(sender) {
-        let {url} = sender;
+        console.log(sender, sender.hasOwnProperty("url"), sender.tab.url)
+        let url;
+    
+        if (sender.hasOwnProperty("url")) {
+            url = sender.url;
+        } else if (sender.hasOwnProperty("tab")) {
+            if(sender.tab.hasOwnProperty("url"))
+                url = sender.tab.url;
+            else
+                return
+        } else {
+            return;
+        }
+        
+        console.log(url)
+        
+        console.log(url)
         if (typeof url === 'string' && yomichan.isExtensionUrl(url)) { return; }
         const {tab} = url;
         if (typeof tab === 'object' && tab !== null) {
@@ -1564,11 +1614,6 @@ class Backend {
                 }
             });
         });
-
-        if (!(typeof chrome.windows === 'object' && chrome.windows !== null)) {
-            // Windows not supported (e.g. on Firefox mobile)
-            return;
-        }
 
         try {
             const tabWindow = await new Promise((resolve, reject) => {

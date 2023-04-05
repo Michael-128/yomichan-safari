@@ -725,12 +725,26 @@ class Logger extends EventDispatcher {
         }
         message += '\n\nIssues can be reported at https://github.com/FooSoft/yomichan/issues';
 
+        /*const chrome = browser;
+        
+        if (!chrome.windows.hasOwnProperty("connect")) {
+            // Mobile device detected
+            
+            switch (level) {
+                case 'info': alert(message); break; //console.info(message); break;
+                case 'debug': alert(message); break; //console.debug(message); break;
+                case 'warn': alert(message); break; //console.warn(message); break;
+                case 'error': alert(message); break; //console.error(message); break;
+                default: alert(message); break; //console.log(message); break;
+            }
+        }*/
+        
         switch (level) {
-            case 'info': console.info(message); break;
-            case 'debug': console.debug(message); break;
-            case 'warn': console.warn(message); break;
-            case 'error': console.error(message); break;
-            default: console.log(message); break;
+            case 'info': console.info(message); break; //console.info(message); break;
+            case 'debug': console.debug(message); break; //console.debug(message); break;
+            case 'warn': console.warn(message); break; //console.warn(message); break;
+            case 'error': console.error(message); break; //console.error(message); break;
+            default: console.log(message); break; //console.log(message); break;
         }
 
         this.trigger('log', {error, level, context});

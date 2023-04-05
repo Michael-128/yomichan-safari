@@ -129,7 +129,6 @@ class Yomichan extends EventDispatcher {
             this._api = new API(this);
 
             this._crossFrame = new CrossFrameAPI();
-            this._crossFrame.prepare();
 
             this.sendMessage({action: 'requestBackendReadySignal'});
             await this._isBackendReadyPromise;

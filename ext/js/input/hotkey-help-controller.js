@@ -99,6 +99,7 @@ class HotkeyHelpController {
 
         commandMap.clear();
         for (const {name, shortcut} of commands) {
+            if (!shortcut) { continue; }
             if (shortcut.length === 0) { continue; }
             const {key, modifiers} = this._hotkeyUtil.convertCommandToInput(shortcut);
             commandMap.set(name, this._hotkeyUtil.getInputDisplayValue(key, modifiers));

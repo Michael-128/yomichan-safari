@@ -307,7 +307,6 @@ class AnkiConnect {
                     'Content-Type': 'application/json'
                 },
                 redirect: 'follow',
-                referrerPolicy: 'no-referrer',
                 body: JSON.stringify(body)
             });
         } catch (e) {
