@@ -29,29 +29,18 @@ class CrossFrameAPI {
     }
 
     registerHandlers(messageHandlers) {
-        
         for (const [key, value] of messageHandlers) {
-            
-            //console.log("Registering "+key, key, value)
-            
             if (this._messageHandlers.has(key)) {
                 throw new Error(`Handler ${key} is already registered`);
             }
             this._messageHandlers.set(key, value);
-            
-            //console.log(value.handler)
             chrome.runtime.onMessage.addListener(value.handler)
-            
-            //console.log(chrome.runtime.onMessage.hasListener(value.handler))
         }
     }
 
     unregisterHandler(key) {
-        console.log("Unregistering "+key)
+        if(chrome.runtime.onMessage.hasListener(this._messageHandlers.get(key)))
+            chrome.runtime.onMessage.removeListener(this._messageHandlers.get(key))
         return this._messageHandlers.delete(key);
-    }
-    
-    _onMessage(data) {
-        console.log(data)
     }
 }
