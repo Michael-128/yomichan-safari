@@ -3,8 +3,8 @@
 This is my attempt at making yomichan compatible with Safari/Orion browser on iOS, iPadOS and MacOS.
 
 ## Known Issues:
-   - Popup doesn't work
-   - Adding cards to Anki doesn't work
+   - Popup doesn't work in Safari
+   - Adding cards to Anki doesn't work in Safari
 
 ## Setup
 1. Install the extension:
