@@ -1,6 +1,6 @@
 # Yomichan
 
-This is my attempt at making yomichan compatible with Safari/Orion browser on iOS, iPadOS and MacOS.
+Yomichan fork, that aims to be compatible with Safari/Orion browser on iOS, iPadOS and MacOS.
 
 ## Known Issues:
    - Popup doesn't work in Safari
